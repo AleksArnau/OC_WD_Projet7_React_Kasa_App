@@ -1,3 +1,7 @@
+.Accueil > .banniere {
+  height: 110px;
+}
+
 .liste-locations {
   background-color: #f6f6f6;
   border-radius: 25px;
@@ -10,5 +14,8 @@
 @media screen and (max-width: 992px) {
   .liste-locations {
     grid-template-columns: 1fr;
+    background-color: unset;
+    gap: 20px 0;
+    padding: 0;
   }
 }

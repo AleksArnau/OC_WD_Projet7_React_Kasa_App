@@ -8,15 +8,20 @@ import ListeLogements from "../../assets/api/logements.json";
 function Home() {
   const Logements = ListeLogements.map((logement) => {
     return (
-      <Tuile id={logement.id} image={logement.cover} titre={logement.title} />
+      <Tuile
+        key={logement.id}
+        id={logement.id}
+        image={logement.cover}
+        titre={logement.title}
+      />
     );
   });
 
   return (
-    <>
+    <div className="Accueil">
       <Banner image={bannerHome} />
       <div className="liste-locations">{Logements}</div>
-    </>
+    </div>
   );
 }
 
