@@ -11,8 +11,7 @@ function RoutesPath() {
     <HashRouter>
       <Layout>
         <Routes>
-          <Route element={<Navigate replace to="/home" />} path="/" />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/logement/:id" element={<Fiche />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error404 />} />
