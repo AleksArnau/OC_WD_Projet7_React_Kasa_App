@@ -9,11 +9,7 @@ import Layout from "../src/layouts/Layout";
 ReactDOM.render(
   <React.StrictMode>
     <div className="contenu">
-      <BrowserRouter>
-        <Layout>
-          <App />
-        </Layout>
-      </BrowserRouter>
+      <App />
     </div>
   </React.StrictMode>,
   document.getElementById("root")
