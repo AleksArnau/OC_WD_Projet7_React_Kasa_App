@@ -10,22 +10,22 @@ function Header() {
       <nav>
         <NavLink
           to="/"
-          className="lien-menu"
+          className="lien-site"
           style={({ isActive }) =>
             isActive
-              ? { textDecoration: "underline" }
-              : { textDecoration: "unset" }
+              ? { borderBottom: "1px solid #ff6060" }
+              : { borderBottom: "unset" }
           }
         >
           Accueil
         </NavLink>
         <NavLink
           to="/about"
-          className="lien-menu"
+          className="lien-site"
           style={({ isActive }) =>
             isActive
-              ? { textDecoration: "underline" }
-              : { textDecoration: "unset" }
+              ? { borderBottom: "1px solid #ff6060" }
+              : { borderBottom: "unset" }
           }
         >
           À propos
