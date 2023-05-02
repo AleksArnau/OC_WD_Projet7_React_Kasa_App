@@ -10,13 +10,12 @@ function Dropdown({ titre, description }) {
     <div className="dropdown" id={`dropdown-${titre}`}>
       <div className="header-dropdown">
         <div className="titre-dropdown">{titre}</div>
-        <a
+        <span
           className={`fleche-dropdown ${ouvert}`}
-          href={`#dropdown-${titre}`}
           onClick={() => setOuvert(!ouvert)}
         >
           <img src={fleche} alt="Ouvrir cette liste" />
-        </a>
+        </span>
       </div>
       {ouvert && <div className="description-dropdown">{description}</div>}
     </div>

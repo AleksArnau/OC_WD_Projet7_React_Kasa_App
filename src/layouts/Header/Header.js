@@ -6,28 +6,12 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <img to="/" src={logoHeader} alt="Logo" />
+      <img src={logoHeader} alt="Logo" />
       <nav>
-        <NavLink
-          to="/"
-          className="lien-site"
-          style={({ isActive }) =>
-            isActive
-              ? { borderBottom: "1px solid #ff6060" }
-              : { borderBottom: "unset" }
-          }
-        >
+        <NavLink to="/home" className="lien-site lien-menu">
           Accueil
         </NavLink>
-        <NavLink
-          to="/about"
-          className="lien-site"
-          style={({ isActive }) =>
-            isActive
-              ? { borderBottom: "1px solid #ff6060" }
-              : { borderBottom: "unset" }
-          }
-        >
+        <NavLink to="/about" className="lien-site lien-menu">
           À propos
         </NavLink>
       </nav>
