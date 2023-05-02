@@ -2,9 +2,9 @@ import React from "react";
 import "./Banner.css";
 
 function Banner({ image, texte }) {
-  return(
+  return (
     <div className="banniere">
-      <img className="banniere-img" src={image} alt="Banner"/>
+      <img className="banniere-img" src={image} alt="Bannière" />
       <div className="banniere-sombre"></div>
       <span className="banniere-txt">{texte}</span>
     </div>

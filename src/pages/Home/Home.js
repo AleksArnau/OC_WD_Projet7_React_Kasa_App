@@ -12,7 +12,7 @@ function Home() {
       <Banner image={bannerHome} texte="Chez vous, partout et ailleurs" />
       <div className="liste-logements">
         {ListeLogements.map((logement) => (
-          <NavLink to={"/logement/" + logement.id}>
+          <NavLink key={logement.id} to={"/logement/" + logement.id}>
             <Tuile
               key={logement.id}
               id={logement.id}
