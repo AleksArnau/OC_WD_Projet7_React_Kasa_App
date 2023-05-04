@@ -4,7 +4,7 @@ import fleche from "../../assets/img/Components/Dropdown/Fleche.svg";
 
 function Dropdown({ titre, description }) {
   //state hook
-  const [ouvert, setOuvert] = useState(true);
+  const [ouvert, setOuvert] = useState(false);
 
   return (
     <div className="dropdown" id={`dropdown-${titre}`}>

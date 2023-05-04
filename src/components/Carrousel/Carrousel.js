@@ -3,6 +3,7 @@ import "./Carrousel.css";
 import fleche from "../../assets/img/Components/Carrousel/Fleche.png";
 
 function Carrousel({ images }) {
+  //hook
   let [imgDisplay, switchImg] = useState(0);
   let nombreImg = images.length;
 
